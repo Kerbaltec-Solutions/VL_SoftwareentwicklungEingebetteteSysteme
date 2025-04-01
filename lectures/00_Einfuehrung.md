@@ -245,7 +245,7 @@ int main(void)
   {
      if (TCNT1>15625){
         TCNT1 = 0;  
-        PINB = (1 << PB5); // LED ein und aus
+        PINB |= (1 << PB5); // LED ein und aus
      }
   }
 }
